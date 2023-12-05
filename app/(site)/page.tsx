@@ -23,7 +23,7 @@ export default async function Home() {
         {projects.map((project: Project) => (
           <Link
             href={`/projects/${project.slug}`}
-            id={project._id}
+            key={project._id}
             className='border-2 border-gray-500 rounded-lg p-1 hover:scale-105 hover:border-blue-500 transition'
           >
             {project.image && (
